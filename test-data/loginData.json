@@ -1,0 +1,44 @@
+[
+  {
+    "caseName": "LG-01: valid email and password",
+    "email": "saiful@gmail.com",
+    "password": "123456",
+    "expected": "success"
+  },
+  {
+    "caseName": "LG-02: both fields empty",
+    "email": "",
+    "password": "",
+    "expected": "error"
+  },
+  {
+    "caseName": "LG-03: email is empty",
+    "email": "",
+    "password": "Test@12345",
+    "expected": "error"
+  },
+  {
+    "caseName": "LG-04: password is empty",
+    "email": "YOUR_REAL_EMAIL",
+    "password": "",
+    "expected": "error"
+  },
+  {
+    "caseName": "LG-05: wrong password",
+    "email": "YOUR_REAL_EMAIL",
+    "password": "WrongPass@999",
+    "expected": "error"
+  },
+  {
+    "caseName": "LG-06: email not registered",
+    "email": "nobody.registered@mailinator.com",
+    "password": "Test@12345",
+    "expected": "error"
+  },
+  {
+    "caseName": "LG-07: email has no @ sign",
+    "email": "testmail.com",
+    "password": "Test@12345",
+    "expected": "error"
+  }
+]

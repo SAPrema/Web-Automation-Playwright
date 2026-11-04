@@ -1,0 +1,50 @@
+[
+  {
+    "caseName": "SU-01: valid details",
+    "firstName": "Sumaiyea",
+    "lastName": "Tester",
+    "email": "RANDOM",
+    "password": "Test@12345",
+    "expected": "success"
+  },
+  {
+    "caseName": "SU-02: all fields empty",
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "password": "",
+    "expected": "error"
+  },
+  {
+    "caseName": "SU-03: email is empty",
+    "firstName": "Sumaiyea",
+    "lastName": "Tester",
+    "email": "",
+    "password": "Test@12345",
+    "expected": "error"
+  },
+  {
+    "caseName": "SU-04: password is empty",
+    "firstName": "Sumaiyea",
+    "lastName": "Tester",
+    "email": "RANDOM",
+    "password": "",
+    "expected": "error"
+  },
+  {
+    "caseName": "SU-05: email has no @ sign",
+    "firstName": "Sumaiyea",
+    "lastName": "Tester",
+    "email": "testmail.com",
+    "password": "Test@12345",
+    "expected": "error"
+  },
+  {
+    "caseName": "SU-06: password too short",
+    "firstName": "Sumaiyea",
+    "lastName": "Tester",
+    "email": "RANDOM",
+    "password": "12",
+    "expected": "error"
+  }
+]
