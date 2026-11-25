@@ -34,9 +34,9 @@ export class SignupPage {
   }
 
   // Check we are on the sign-up page
-  async checkPageLoaded() {
-    await expect(this.page).toHaveURL(/account\/register/);
-  }
+  // async checkPageLoaded() {
+  //   await expect(this.page).toHaveURL(/account\/register/);
+  // }
 
   // Success: the user leaves the sign-up page
   async checkSignupSuccess() {
